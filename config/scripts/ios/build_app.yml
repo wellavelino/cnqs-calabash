@@ -1,9 +1,8 @@
 dev:
-  xcworkspace: "Path_to_the_xcworkspace_folder"
-  scheme: TargetName
+  xcworkspace: /Users/wellington/Projetos/cnqs-calabash/desafio-ios/ConcreteTest.xcworkspace/
+  scheme: ConcreteTest-cal
   configuration: Debug
-  destination: "platform=iOS Simulator,name=iPhone 6"
-  export_path: "Path_to_export_app_folder"
+  export_path: /Users/wellington/Projetos/cnqs-calabash/build
 
 jenkins:
   xcworkspace: <%= ENV['WORKSPACE']%>/Project.xcworkspace

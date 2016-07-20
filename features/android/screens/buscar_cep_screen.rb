@@ -1,6 +1,6 @@
-class LoginScreen < IOSScreenBase
+class BuscarCepScreen < AndroidScreenBase
   # Identificador da tela
-  # trait(:trait)                 { "* marked:'#{layout_name}'" }
+  # trait(:trait)                 { "* id:'#{layout_name}'" }
 
   # Declare todos os elementos da tela
   # element(:layout_name)         { pending 'Insert layout identificator' }
@@ -8,6 +8,6 @@ class LoginScreen < IOSScreenBase
 
   # Declare todas as acoes da tela
   # action(:touch_button) do
-  #   touch("* marked:'#{button}'")
+  #   touch("* id:'#{button}'")
   # end
 end

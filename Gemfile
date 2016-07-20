@@ -2,5 +2,5 @@
 source 'https://rubygems.org'
 
 gem 'calabash-common'
-gem 'calabash-android', '~> 0.7.0'
+gem 'calabash-android', '0.8.0'
 gem 'calabash-cucumber', '~> 0.19.0'

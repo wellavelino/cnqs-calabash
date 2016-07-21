@@ -6,7 +6,7 @@ class BuscarCepScreen < AndroidScreenBase
   element(:layout_name)              { 'decor_content_parent' }
   element(:search_button)            {  'search' }
   element(:cep_field)                { 'cep' }
-  element(:previous_consultations)   { 'history' }
+  element(:previous_searches)        { 'history' }
   element(:addresses)                { 'addresss' }
 
   # Declare todas as acoes da tela

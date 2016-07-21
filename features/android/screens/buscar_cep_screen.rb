@@ -10,7 +10,6 @@ class BuscarCepScreen < AndroidScreenBase
   element(:addresses)                { 'addresss' }
 
   # Declare todas as acoes da tela
-
   def there_are_addresses?
     address = query("* id:'#{addresses}'")
     address.count >= 1

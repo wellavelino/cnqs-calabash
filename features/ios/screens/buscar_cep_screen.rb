@@ -4,7 +4,7 @@ class BuscarCepScreen < IOSScreenBase
 
   # Declare todos os elementos da tela
   element(:layout_name)              { 'CEP_VIEW' }
-  element(:search_button)            {  'SEACH_BUTTON' }
+  element(:search_button)            {  'SEARCH_BUTTON' }
   element(:cep_field)                { 'CEP_FIELD' }
   element(:previous_searches)        { 'PREVIOUS_SEARCHES' }
   element(:addresses)                { 'ADDRESSES' }

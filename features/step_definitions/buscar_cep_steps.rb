@@ -6,8 +6,8 @@ end
 
 ######### QUANDO #########
 
-When(/^digitar um CEP válido$/) do
-  @page.enter_cep_field CEP[:número]
+When(/^digitar um CEP (válido)$/) do |type|
+  @page.enter_cep CEPS[type.to_sym][:número]
 end
 
 When(/^tocar no botão buscar$/) do
@@ -15,16 +15,21 @@ When(/^tocar no botão buscar$/) do
 end
 
 When(/^tocar no botão de consultas anteriores$/) do
-  @page.touch_previous_consultations
+  @page.touch_previous_searches
 end
 
 ######### ENTãO #########
 
 Then(/^devo visualizar o resultado da busca$/) do
-  @page.is_on_page? CEP[:endereço]
+  #@page.is_on_page? CEPS[:endereço]
 end
 
 Then(/^devo visualizar o histórico de buscas$/) do
-  raise 'There are no addresses on the screen' unless
-      @page.there_are_addresses?
+  sleep (2)
+  raise 'There are no addresses on the screen' unless @page.there_are_addresses?
+end
+
+Então(/^devo visualizar o resultado da busca pelo CEP (válido)$/) do |type|
+  sleep(2)
+  @page.is_on_page? CEPS[type.to_sym][:endereço]
 end

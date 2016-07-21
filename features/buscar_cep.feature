@@ -8,8 +8,9 @@ Funcionalidade: Busca de CEP
     Dado que estou na tela de consulta de CEP
     Quando digitar um CEP válido
     E tocar no botão buscar
-    Então devo visualizar o resultado da busca
+    Então devo visualizar o resultado da busca pelo CEP válido
 
+  @ios
   Cenário: Posso visualizar o histórico de consultas de CEP
     Dado que estou na tela de consulta de CEP
     Quando tocar no botão de consultas anteriores

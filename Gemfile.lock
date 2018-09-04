@@ -53,7 +53,7 @@ GEM
     multi_json (1.12.1)
     multi_test (0.1.2)
     retriable (2.0.2)
-    rubyzip (1.2.0)
+    rubyzip (1.2.1)
     run_loop (2.1.3)
       CFPropertyList (~> 2.2)
       awesome_print (~> 1.2)
